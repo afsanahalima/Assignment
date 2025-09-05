@@ -171,24 +171,26 @@ nav a:hover{
     margin-bottom: 2rem;
     color:white;
 }
-.project-container{
+.project-grid{
     display:flex;
-    flex-wrap:wrap;
+    flex-direction:row;
     justify-content:center;
-    gap:2rem;
-    max-width:1200px;
-    margin:auto;
+    gap:3rem;
+    flex-wrap:nowrap;
+    overflow-x:auto;
+    padding:1rem 0;
+    max-width:100%;
+    scroll-behavior:smooth;
 }
 
 .project-card{
+    flex:0 0 300px;
     background:#2b2f3a;
-    border-radius: 15px;
+    border-radius: 20px;
     padding: 1rem;
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    flex:1 1 250px;
-    max-width: 280px;
 }
 
 .project-card:hover{
